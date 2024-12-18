@@ -1,7 +1,12 @@
 {
   "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
+    "./apps/*",
+    "./packages/*"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ]
 }
