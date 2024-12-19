@@ -9,11 +9,11 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
-    "typescript": "5.5.4",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.11"
+    "typescript": "5.5.4"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

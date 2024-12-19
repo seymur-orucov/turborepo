@@ -1,12 +1,11 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/shared",
   "version": "0.0.0",
   "type": "module",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./styles": "./styles/index.css",
+    "./button": "./components/ui/button.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -14,6 +13,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
@@ -23,14 +23,13 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.1",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.33",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
     "tailwind-merge": "^2.5.5",
     "tailwindcss": "^3.4.17",
     "typescript": "5.5.4"

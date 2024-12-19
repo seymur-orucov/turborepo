@@ -2,13 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import clsx from 'clsx'
+// import { Button } from '@repo/shared/button'
 
 const App = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <div className={clsx('min-h-screen bg-gray-100 py-40')}>
+    <div className="min-h-screen bg-gray-100 py-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center space-x-8">
           <a href="https://vite.dev" target="_blank" rel="noreferrer" className="hover:opacity-80">
@@ -20,6 +20,7 @@ const App = () => {
         </div>
         <h1 className="text-4xl font-bold text-center mt-8 text-gray-900">Vite + React</h1>
         <div className="mt-8 text-center">
+          {/*<Button>Click me</Button>*/}
           <button
             className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
             onClick={() => setCount(count => count + 1)}
