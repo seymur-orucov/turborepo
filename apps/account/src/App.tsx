@@ -8,7 +8,7 @@ const App = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen bg-gray-100 py-40">
+    <div className="min-h-screen py-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center space-x-8">
           <a href="https://vite.dev" target="_blank" rel="noreferrer" className="hover:opacity-80">
