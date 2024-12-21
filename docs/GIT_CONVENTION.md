@@ -136,6 +136,6 @@ git commit -m "feat: comprehensive commit message"
 
 ---
 
-_Last updated: 2024-12-19_
+_Last updated: 2024-12-21_
 
-For any questions or suggestions about this convention guide, please contact the team lead.
+For any questions or suggestions about this convention guide, please contact Team Lead: Seymur Orucov.

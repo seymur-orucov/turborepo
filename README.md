@@ -1,81 +1,113 @@
-# Turborepo starter
+# Turborepo Project
 
-This is an official starter Turborepo.
+This is a monorepo built with [Turborepo](https://turbo.build/) and [pnpm](https://pnpm.io/) workspace.
 
-## Using this example
+## 🚀 Quick Start
 
-Run the following command:
+### Prerequisites
 
-```sh
-npx create-turbo@latest
+- Node.js >= 18
+- pnpm 9.0.0
+
+### Installation
+
+```bash
+# Install pnpm if you haven't already
+npm install -g pnpm@9.0.0
+
+# Install dependencies
+pnpm install
 ```
 
-## What's inside?
+### Development
 
-This Turborepo includes the following packages/apps:
+```bash
+# Start all applications in development mode
+pnpm dev
 
-### Apps and Packages
+# Build all applications and packages
+pnpm build
 
+# Lint all applications and packages
+pnpm lint
+
+# Format code
+pnpm format
+```
+
+## 📦 Project Structure
+
+### Apps
+
+- `account/` - Account management application with Storybook integration
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
+
+### Packages
+
+- `shared/` - Shared components and utilities
 - `@repo/shared`: a stub React component library shared by both `web` and `docs` applications
+- `eslint-config/` - Shared ESLint configurations
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `typescript-config/` - Shared TypeScript configurations
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 🛠 Technology Stack
 
-### Utilities
+- **Build Tool**: Turborepo
+- **Package Manager**: pnpm 9.0.0
+- **Language**: TypeScript 5.5.4
+- **Formatting**: Prettier
+- **Linting**: ESLint
+- **Git Hooks**: Husky
+- **UI Development**: Storybook
 
-This Turborepo has some additional tools already setup for you:
+## 🔄 Development Workflow
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+1. Create a new branch following our [Git Convention](./docs/GIT_CONVENTION.md)
+2. Make your changes
+3. Run `pnpm lint` and `pnpm format` before committing
+4. Create a Pull Request
 
-### Build
+## 📚 Documentation
 
-To build all apps and packages, run the following command:
+- [Git Convention](./docs/GIT_CONVENTION.md) - Our git commit message and branching conventions
+- [Turborepo Documentation](https://turbo.build/repo/docs)
+- [pnpm Documentation](https://pnpm.io/motivation)
 
-```
-cd my-turborepo
-pnpm build
-```
+## 🔧 Configuration Files
 
-### Develop
+- `turbo.json` - Turborepo pipeline configuration
+- `pnpm-workspace.yaml` - pnpm workspace configuration
+- `.npmrc` - npm configuration
+- `.prettierrc` - Prettier configuration
+- `eslint.config.js` - ESLint configuration
 
-To develop all apps and packages, run the following command:
+## 🤝 Contributing
 
-```
-cd my-turborepo
-pnpm dev
-```
+1. All commits must follow our [Git Convention](./docs/GIT_CONVENTION.md)
+2. Run tests and linting before pushing
+3. Update documentation when adding new features
+4. Create detailed Pull Request descriptions
 
-### Remote Caching
+## 📝 Scripts
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+- `pnpm dev` - Start development servers
+- `pnpm build` - Build all applications and packages
+- `pnpm lint` - Lint all code
+- `pnpm format` - Format all code using Prettier
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+## 🔍 Future Scalability
 
-```
-cd my-turborepo
-npx turbo login
-```
+When adding new applications or packages:
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+1. Create new directory in `apps/` or `packages/`
+2. Update `pnpm-workspace.yaml` if needed
+3. Add new pipeline configurations in `turbo.json`
+4. Update this README with new app/package details
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## 🤔 Need Help?
 
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- Check the [Turborepo documentation](https://turbo.build/repo/docs)
+- Review our [Git Convention](./docs/GIT_CONVENTION.md)
+- Contact Team Lead: Seymur Orucov
