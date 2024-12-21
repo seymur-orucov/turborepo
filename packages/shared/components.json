@@ -12,7 +12,10 @@
   },
   "aliases": {
     "components": "@repo/shared/components",
-    "utils": "@repo/shared/lib/utils"
+    "utils": "@repo/shared/lib/utils",
+    "ui": "@repo/shared/components/ui",
+    "lib": "@repo/shared/lib",
+    "hooks": "@repo/shared/hooks"
   },
   "iconLibrary": "lucide"
 }
